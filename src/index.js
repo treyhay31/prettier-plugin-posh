@@ -1,4 +1,4 @@
-const parser = require('toml/lib/parser')
+const parser = require('posh-parser');
 const {
   doc: {
     builders: { concat }
@@ -7,20 +7,20 @@ const {
 
 const languages = [
   {
-    extensions: ['.toml'],
-    name: 'TOML',
-    parsers: ['toml-parse']
+    extensions: ['.ps1', '.psm1', '.psd1'],
+    name: 'POSH',
+    parsers: ['posh-parse']
   }
 ]
 
 const parsers = {
-  'toml-parse': {
+  'posh-parse': {
     parse: text => parser.parse(text),
-    astFormat: 'toml-ast'
+    astFormat: 'posh-ast'
   }
 }
 
-function printToml(path, options, print) {
+function printPosh(path, options, print) {
   const node = path.getValue()
 
   if (Array.isArray(node)) {
@@ -34,8 +34,8 @@ function printToml(path, options, print) {
 }
 
 const printers = {
-  'toml-ast': {
-    print: printToml
+  'posh-ast': {
+    print: printPosh
   }
 }
 
