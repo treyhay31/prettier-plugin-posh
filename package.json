@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "posh": "node src/test-posh.js",
     "example": "prettier --plugin . example.ps1",
     "test": "jest"
   },
@@ -20,6 +21,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "powershell": "^2.3.1",
     "prettier": "^1.15.3"
   },
   "devDependencies": {

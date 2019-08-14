@@ -1,4 +1,4 @@
-const parser = require('posh-parser');
+const parser = require('node-powershell');
 const {
   doc: {
     builders: { concat }
