@@ -1,4 +1,4 @@
-// const parser = require('node-powershell');
+const parse = require("./parse");
 const {
 	doc: {
 		builders: { concat },
@@ -15,7 +15,9 @@ const languages = [
 
 const parsers = {
 	'posh-parse': {
-		parse: text => text,
+		parse: text => {
+            return parse(text).then(text => text).catch(err => console.error(err))
+        },
 		astFormat: 'posh-ast',
 	},
 };

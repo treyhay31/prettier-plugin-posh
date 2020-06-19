@@ -1,0 +1,2666 @@
+[
+    {
+        "Start":  0,
+        "End":  773,
+        "Type":  "ScriptBlockAst",
+        "Value":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+        "Parent":  null,
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  1,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  26,
+                       "EndColumnNumber":  40,
+                       "Text":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "StartOffset":  0,
+                       "EndOffset":  773
+                   }
+    },
+    {
+        "Start":  0,
+        "End":  773,
+        "Type":  "NamedBlockAst",
+        "Value":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+        "Parent":  {
+                       "Attributes":  "",
+                       "UsingStatements":  "",
+                       "ParamBlock":  null,
+                       "BeginBlock":  null,
+                       "ProcessBlock":  null,
+                       "EndBlock":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "DynamicParamBlock":  null,
+                       "ScriptRequirements":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  null
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  1,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  26,
+                       "EndColumnNumber":  40,
+                       "Text":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "StartOffset":  0,
+                       "EndOffset":  773
+                   }
+    },
+    {
+        "Start":  0,
+        "End":  34,
+        "Type":  "PipelineAst",
+        "Value":  "Write-Host \"Logging some stuff...\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  1,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  1,
+                       "EndColumnNumber":  35,
+                       "Text":  "Write-Host \"Logging some stuff...\"",
+                       "StartOffset":  0,
+                       "EndOffset":  34
+                   }
+    },
+    {
+        "Start":  0,
+        "End":  34,
+        "Type":  "CommandAst",
+        "Value":  "Write-Host \"Logging some stuff...\"",
+        "Parent":  {
+                       "PipelineElements":  "Write-Host \"Logging some stuff...\"",
+                       "Extent":  "Write-Host \"Logging some stuff...\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  1,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  1,
+                       "EndColumnNumber":  35,
+                       "Text":  "Write-Host \"Logging some stuff...\"",
+                       "StartOffset":  0,
+                       "EndOffset":  34
+                   }
+    },
+    {
+        "Start":  0,
+        "End":  10,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "Write-Host",
+        "Parent":  {
+                       "CommandElements":  "Write-Host \"Logging some stuff...\"",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Write-Host \"Logging some stuff...\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  1,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  1,
+                       "EndColumnNumber":  11,
+                       "Text":  "Write-Host",
+                       "StartOffset":  0,
+                       "EndOffset":  10
+                   }
+    },
+    {
+        "Start":  11,
+        "End":  34,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"Logging some stuff...\"",
+        "Parent":  {
+                       "CommandElements":  "Write-Host \"Logging some stuff...\"",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Write-Host \"Logging some stuff...\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  1,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  1,
+                       "EndColumnNumber":  35,
+                       "Text":  "\"Logging some stuff...\"",
+                       "StartOffset":  11,
+                       "EndOffset":  34
+                   }
+    },
+    {
+        "Start":  38,
+        "End":  107,
+        "Type":  "AssignmentStatementAst",
+        "Value":  "$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  70,
+                       "Text":  "$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "StartOffset":  38,
+                       "EndOffset":  107
+                   }
+    },
+    {
+        "Start":  38,
+        "End":  43,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$trey",
+        "Parent":  {
+                       "Left":  "$trey",
+                       "Operator":  42,
+                       "Right":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "ErrorPosition":  "=",
+                       "Extent":  "$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  6,
+                       "Text":  "$trey",
+                       "StartOffset":  38,
+                       "EndOffset":  43
+                   }
+    },
+    {
+        "Start":  46,
+        "End":  107,
+        "Type":  "CommandExpressionAst",
+        "Value":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+        "Parent":  {
+                       "Left":  "$trey",
+                       "Operator":  42,
+                       "Right":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "ErrorPosition":  "=",
+                       "Extent":  "$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  9,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  70,
+                       "Text":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "StartOffset":  46,
+                       "EndOffset":  107
+                   }
+    },
+    {
+        "Start":  46,
+        "End":  107,
+        "Type":  "ArrayExpressionAst",
+        "Value":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+        "Parent":  {
+                       "Expression":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "Redirections":  "",
+                       "Extent":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "Parent":  "$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  9,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  70,
+                       "Text":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "StartOffset":  46,
+                       "EndOffset":  107
+                   }
+    },
+    {
+        "Start":  48,
+        "End":  106,
+        "Type":  "StatementBlockAst",
+        "Value":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+        "Parent":  {
+                       "SubExpression":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")",
+                       "Parent":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  11,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  69,
+                       "Text":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "StartOffset":  48,
+                       "EndOffset":  106
+                   }
+    },
+    {
+        "Start":  48,
+        "End":  106,
+        "Type":  "PipelineAst",
+        "Value":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+        "Parent":  {
+                       "Statements":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Traps":  null,
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "@(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  11,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  69,
+                       "Text":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "StartOffset":  48,
+                       "EndOffset":  106
+                   }
+    },
+    {
+        "Start":  48,
+        "End":  106,
+        "Type":  "CommandExpressionAst",
+        "Value":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+        "Parent":  {
+                       "PipelineElements":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  11,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  69,
+                       "Text":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "StartOffset":  48,
+                       "EndOffset":  106
+                   }
+    },
+    {
+        "Start":  48,
+        "End":  106,
+        "Type":  "ArrayLiteralAst",
+        "Value":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+        "Parent":  {
+                       "Expression":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Redirections":  "",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  11,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  69,
+                       "Text":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "StartOffset":  48,
+                       "EndOffset":  106
+                   }
+    },
+    {
+        "Start":  48,
+        "End":  54,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"trey\"",
+        "Parent":  {
+                       "Elements":  "\"trey\" \"hayden\" \"daniel\" \"other\" \"names\" \"as\" \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  11,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  17,
+                       "Text":  "\"trey\"",
+                       "StartOffset":  48,
+                       "EndOffset":  54
+                   }
+    },
+    {
+        "Start":  56,
+        "End":  64,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"hayden\"",
+        "Parent":  {
+                       "Elements":  "\"trey\" \"hayden\" \"daniel\" \"other\" \"names\" \"as\" \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  19,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  27,
+                       "Text":  "\"hayden\"",
+                       "StartOffset":  56,
+                       "EndOffset":  64
+                   }
+    },
+    {
+        "Start":  66,
+        "End":  74,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"daniel\"",
+        "Parent":  {
+                       "Elements":  "\"trey\" \"hayden\" \"daniel\" \"other\" \"names\" \"as\" \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  29,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  37,
+                       "Text":  "\"daniel\"",
+                       "StartOffset":  66,
+                       "EndOffset":  74
+                   }
+    },
+    {
+        "Start":  76,
+        "End":  83,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"other\"",
+        "Parent":  {
+                       "Elements":  "\"trey\" \"hayden\" \"daniel\" \"other\" \"names\" \"as\" \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  39,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  46,
+                       "Text":  "\"other\"",
+                       "StartOffset":  76,
+                       "EndOffset":  83
+                   }
+    },
+    {
+        "Start":  85,
+        "End":  92,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"names\"",
+        "Parent":  {
+                       "Elements":  "\"trey\" \"hayden\" \"daniel\" \"other\" \"names\" \"as\" \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  48,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  55,
+                       "Text":  "\"names\"",
+                       "StartOffset":  85,
+                       "EndOffset":  92
+                   }
+    },
+    {
+        "Start":  94,
+        "End":  98,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"as\"",
+        "Parent":  {
+                       "Elements":  "\"trey\" \"hayden\" \"daniel\" \"other\" \"names\" \"as\" \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  57,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  61,
+                       "Text":  "\"as\"",
+                       "StartOffset":  94,
+                       "EndOffset":  98
+                   }
+    },
+    {
+        "Start":  100,
+        "End":  106,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"well\"",
+        "Parent":  {
+                       "Elements":  "\"trey\" \"hayden\" \"daniel\" \"other\" \"names\" \"as\" \"well\"",
+                       "StaticType":  "System.Object[]",
+                       "Extent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\"",
+                       "Parent":  "\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  3,
+                       "StartColumnNumber":  63,
+                       "EndLineNumber":  3,
+                       "EndColumnNumber":  69,
+                       "Text":  "\"well\"",
+                       "StartOffset":  100,
+                       "EndOffset":  106
+                   }
+    },
+    {
+        "Start":  111,
+        "End":  146,
+        "Type":  "PipelineAst",
+        "Value":  "Write-Host \"Logging $trey stuff...\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  5,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  5,
+                       "EndColumnNumber":  36,
+                       "Text":  "Write-Host \"Logging $trey stuff...\"",
+                       "StartOffset":  111,
+                       "EndOffset":  146
+                   }
+    },
+    {
+        "Start":  111,
+        "End":  146,
+        "Type":  "CommandAst",
+        "Value":  "Write-Host \"Logging $trey stuff...\"",
+        "Parent":  {
+                       "PipelineElements":  "Write-Host \"Logging $trey stuff...\"",
+                       "Extent":  "Write-Host \"Logging $trey stuff...\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  5,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  5,
+                       "EndColumnNumber":  36,
+                       "Text":  "Write-Host \"Logging $trey stuff...\"",
+                       "StartOffset":  111,
+                       "EndOffset":  146
+                   }
+    },
+    {
+        "Start":  111,
+        "End":  121,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "Write-Host",
+        "Parent":  {
+                       "CommandElements":  "Write-Host \"Logging $trey stuff...\"",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Write-Host \"Logging $trey stuff...\"",
+                       "Parent":  "Write-Host \"Logging $trey stuff...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  5,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  5,
+                       "EndColumnNumber":  11,
+                       "Text":  "Write-Host",
+                       "StartOffset":  111,
+                       "EndOffset":  121
+                   }
+    },
+    {
+        "Start":  122,
+        "End":  146,
+        "Type":  "ExpandableStringExpressionAst",
+        "Value":  "\"Logging $trey stuff...\"",
+        "Parent":  {
+                       "CommandElements":  "Write-Host \"Logging $trey stuff...\"",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Write-Host \"Logging $trey stuff...\"",
+                       "Parent":  "Write-Host \"Logging $trey stuff...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  5,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  5,
+                       "EndColumnNumber":  36,
+                       "Text":  "\"Logging $trey stuff...\"",
+                       "StartOffset":  122,
+                       "EndOffset":  146
+                   }
+    },
+    {
+        "Start":  131,
+        "End":  136,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$trey",
+        "Parent":  {
+                       "Value":  "Logging $trey stuff...",
+                       "StringConstantType":  2,
+                       "NestedExpressions":  "$trey",
+                       "StaticType":  "string",
+                       "Extent":  "\"Logging $trey stuff...\"",
+                       "Parent":  "Write-Host \"Logging $trey stuff...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  5,
+                       "StartColumnNumber":  21,
+                       "EndLineNumber":  5,
+                       "EndColumnNumber":  26,
+                       "Text":  "$trey",
+                       "StartOffset":  131,
+                       "EndOffset":  136
+                   }
+    },
+    {
+        "Start":  150,
+        "End":  412,
+        "Type":  "FunctionDefinitionAst",
+        "Value":  "function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  7,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  12,
+                       "EndColumnNumber":  2,
+                       "Text":  "function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+                       "StartOffset":  150,
+                       "EndOffset":  412
+                   }
+    },
+    {
+        "Start":  173,
+        "End":  412,
+        "Type":  "ScriptBlockAst",
+        "Value":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+        "Parent":  {
+                       "IsFilter":  false,
+                       "IsWorkflow":  false,
+                       "Name":  "Get-StuffHere",
+                       "Parameters":  null,
+                       "Body":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+                       "Extent":  "function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  7,
+                       "StartColumnNumber":  24,
+                       "EndLineNumber":  12,
+                       "EndColumnNumber":  2,
+                       "Text":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+                       "StartOffset":  173,
+                       "EndOffset":  412
+                   }
+    },
+    {
+        "Start":  180,
+        "End":  253,
+        "Type":  "ParamBlockAst",
+        "Value":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+        "Parent":  {
+                       "Attributes":  "",
+                       "UsingStatements":  "",
+                       "ParamBlock":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+                       "BeginBlock":  null,
+                       "ProcessBlock":  null,
+                       "EndBlock":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "DynamicParamBlock":  null,
+                       "ScriptRequirements":  null,
+                       "Extent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+                       "Parent":  "function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  78,
+                       "Text":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+                       "StartOffset":  180,
+                       "EndOffset":  253
+                   }
+    },
+    {
+        "Start":  186,
+        "End":  201,
+        "Type":  "ParameterAst",
+        "Value":  "[string]$thing1",
+        "Parent":  {
+                       "Attributes":  "",
+                       "Parameters":  "[string]$thing1 [string]$thing2 [string]$thing3 [string]$thing4",
+                       "Extent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+                       "Parent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  11,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  26,
+                       "Text":  "[string]$thing1",
+                       "StartOffset":  186,
+                       "EndOffset":  201
+                   }
+    },
+    {
+        "Start":  186,
+        "End":  194,
+        "Type":  "TypeConstraintAst",
+        "Value":  "[string]",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing1",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing1",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  11,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  19,
+                       "Text":  "[string]",
+                       "StartOffset":  186,
+                       "EndOffset":  194
+                   }
+    },
+    {
+        "Start":  194,
+        "End":  201,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing1",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing1",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing1",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  19,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  26,
+                       "Text":  "$thing1",
+                       "StartOffset":  194,
+                       "EndOffset":  201
+                   }
+    },
+    {
+        "Start":  203,
+        "End":  218,
+        "Type":  "ParameterAst",
+        "Value":  "[string]$thing2",
+        "Parent":  {
+                       "Attributes":  "",
+                       "Parameters":  "[string]$thing1 [string]$thing2 [string]$thing3 [string]$thing4",
+                       "Extent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+                       "Parent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  28,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  43,
+                       "Text":  "[string]$thing2",
+                       "StartOffset":  203,
+                       "EndOffset":  218
+                   }
+    },
+    {
+        "Start":  203,
+        "End":  211,
+        "Type":  "TypeConstraintAst",
+        "Value":  "[string]",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing2",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing2",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  28,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  36,
+                       "Text":  "[string]",
+                       "StartOffset":  203,
+                       "EndOffset":  211
+                   }
+    },
+    {
+        "Start":  211,
+        "End":  218,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing2",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing2",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing2",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  36,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  43,
+                       "Text":  "$thing2",
+                       "StartOffset":  211,
+                       "EndOffset":  218
+                   }
+    },
+    {
+        "Start":  220,
+        "End":  235,
+        "Type":  "ParameterAst",
+        "Value":  "[string]$thing3",
+        "Parent":  {
+                       "Attributes":  "",
+                       "Parameters":  "[string]$thing1 [string]$thing2 [string]$thing3 [string]$thing4",
+                       "Extent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+                       "Parent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  45,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  60,
+                       "Text":  "[string]$thing3",
+                       "StartOffset":  220,
+                       "EndOffset":  235
+                   }
+    },
+    {
+        "Start":  220,
+        "End":  228,
+        "Type":  "TypeConstraintAst",
+        "Value":  "[string]",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing3",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing3",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  45,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  53,
+                       "Text":  "[string]",
+                       "StartOffset":  220,
+                       "EndOffset":  228
+                   }
+    },
+    {
+        "Start":  228,
+        "End":  235,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing3",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing3",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing3",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  53,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  60,
+                       "Text":  "$thing3",
+                       "StartOffset":  228,
+                       "EndOffset":  235
+                   }
+    },
+    {
+        "Start":  237,
+        "End":  252,
+        "Type":  "ParameterAst",
+        "Value":  "[string]$thing4",
+        "Parent":  {
+                       "Attributes":  "",
+                       "Parameters":  "[string]$thing1 [string]$thing2 [string]$thing3 [string]$thing4",
+                       "Extent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+                       "Parent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  62,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  77,
+                       "Text":  "[string]$thing4",
+                       "StartOffset":  237,
+                       "EndOffset":  252
+                   }
+    },
+    {
+        "Start":  237,
+        "End":  245,
+        "Type":  "TypeConstraintAst",
+        "Value":  "[string]",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing4",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing4",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  62,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  70,
+                       "Text":  "[string]",
+                       "StartOffset":  237,
+                       "EndOffset":  245
+                   }
+    },
+    {
+        "Start":  245,
+        "End":  252,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing4",
+        "Parent":  {
+                       "Attributes":  "[string]",
+                       "Name":  "$thing4",
+                       "DefaultValue":  null,
+                       "StaticType":  "string",
+                       "Extent":  "[string]$thing4",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  70,
+                       "EndLineNumber":  8,
+                       "EndColumnNumber":  77,
+                       "Text":  "$thing4",
+                       "StartOffset":  245,
+                       "EndOffset":  252
+                   }
+    },
+    {
+        "Start":  180,
+        "End":  409,
+        "Type":  "NamedBlockAst",
+        "Value":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+        "Parent":  {
+                       "Attributes":  "",
+                       "UsingStatements":  "",
+                       "ParamBlock":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)",
+                       "BeginBlock":  null,
+                       "ProcessBlock":  null,
+                       "EndBlock":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "DynamicParamBlock":  null,
+                       "ScriptRequirements":  null,
+                       "Extent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}",
+                       "Parent":  "function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  8,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  84,
+                       "Text":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "StartOffset":  180,
+                       "EndOffset":  409
+                   }
+    },
+    {
+        "Start":  259,
+        "End":  303,
+        "Type":  "AssignmentStatementAst",
+        "Value":  "$xml = [xml](Get-Content \"some-example.xml\")",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "$xml = [xml](Get-Content \"some-example.xml\") Write-Host $xml return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Traps":  null,
+                       "Extent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  49,
+                       "Text":  "$xml = [xml](Get-Content \"some-example.xml\")",
+                       "StartOffset":  259,
+                       "EndOffset":  303
+                   }
+    },
+    {
+        "Start":  259,
+        "End":  263,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$xml",
+        "Parent":  {
+                       "Left":  "$xml",
+                       "Operator":  42,
+                       "Right":  "[xml](Get-Content \"some-example.xml\")",
+                       "ErrorPosition":  "=",
+                       "Extent":  "$xml = [xml](Get-Content \"some-example.xml\")",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  9,
+                       "Text":  "$xml",
+                       "StartOffset":  259,
+                       "EndOffset":  263
+                   }
+    },
+    {
+        "Start":  266,
+        "End":  303,
+        "Type":  "CommandExpressionAst",
+        "Value":  "[xml](Get-Content \"some-example.xml\")",
+        "Parent":  {
+                       "Left":  "$xml",
+                       "Operator":  42,
+                       "Right":  "[xml](Get-Content \"some-example.xml\")",
+                       "ErrorPosition":  "=",
+                       "Extent":  "$xml = [xml](Get-Content \"some-example.xml\")",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  49,
+                       "Text":  "[xml](Get-Content \"some-example.xml\")",
+                       "StartOffset":  266,
+                       "EndOffset":  303
+                   }
+    },
+    {
+        "Start":  266,
+        "End":  303,
+        "Type":  "ConvertExpressionAst",
+        "Value":  "[xml](Get-Content \"some-example.xml\")",
+        "Parent":  {
+                       "Expression":  "[xml](Get-Content \"some-example.xml\")",
+                       "Redirections":  "",
+                       "Extent":  "[xml](Get-Content \"some-example.xml\")",
+                       "Parent":  "$xml = [xml](Get-Content \"some-example.xml\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  49,
+                       "Text":  "[xml](Get-Content \"some-example.xml\")",
+                       "StartOffset":  266,
+                       "EndOffset":  303
+                   }
+    },
+    {
+        "Start":  266,
+        "End":  271,
+        "Type":  "TypeConstraintAst",
+        "Value":  "[xml]",
+        "Parent":  {
+                       "Type":  "[xml]",
+                       "StaticType":  "xml",
+                       "Child":  "(Get-Content \"some-example.xml\")",
+                       "Attribute":  "[xml]",
+                       "Extent":  "[xml](Get-Content \"some-example.xml\")",
+                       "Parent":  "[xml](Get-Content \"some-example.xml\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  17,
+                       "Text":  "[xml]",
+                       "StartOffset":  266,
+                       "EndOffset":  271
+                   }
+    },
+    {
+        "Start":  271,
+        "End":  303,
+        "Type":  "ParenExpressionAst",
+        "Value":  "(Get-Content \"some-example.xml\")",
+        "Parent":  {
+                       "Type":  "[xml]",
+                       "StaticType":  "xml",
+                       "Child":  "(Get-Content \"some-example.xml\")",
+                       "Attribute":  "[xml]",
+                       "Extent":  "[xml](Get-Content \"some-example.xml\")",
+                       "Parent":  "[xml](Get-Content \"some-example.xml\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  17,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  49,
+                       "Text":  "(Get-Content \"some-example.xml\")",
+                       "StartOffset":  271,
+                       "EndOffset":  303
+                   }
+    },
+    {
+        "Start":  272,
+        "End":  302,
+        "Type":  "PipelineAst",
+        "Value":  "Get-Content \"some-example.xml\"",
+        "Parent":  {
+                       "Pipeline":  "Get-Content \"some-example.xml\"",
+                       "StaticType":  "System.Object",
+                       "Extent":  "(Get-Content \"some-example.xml\")",
+                       "Parent":  "[xml](Get-Content \"some-example.xml\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  18,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  48,
+                       "Text":  "Get-Content \"some-example.xml\"",
+                       "StartOffset":  272,
+                       "EndOffset":  302
+                   }
+    },
+    {
+        "Start":  272,
+        "End":  302,
+        "Type":  "CommandAst",
+        "Value":  "Get-Content \"some-example.xml\"",
+        "Parent":  {
+                       "PipelineElements":  "Get-Content \"some-example.xml\"",
+                       "Extent":  "Get-Content \"some-example.xml\"",
+                       "Parent":  "(Get-Content \"some-example.xml\")"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  18,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  48,
+                       "Text":  "Get-Content \"some-example.xml\"",
+                       "StartOffset":  272,
+                       "EndOffset":  302
+                   }
+    },
+    {
+        "Start":  272,
+        "End":  283,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "Get-Content",
+        "Parent":  {
+                       "CommandElements":  "Get-Content \"some-example.xml\"",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Get-Content \"some-example.xml\"",
+                       "Parent":  "Get-Content \"some-example.xml\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  18,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  29,
+                       "Text":  "Get-Content",
+                       "StartOffset":  272,
+                       "EndOffset":  283
+                   }
+    },
+    {
+        "Start":  284,
+        "End":  302,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"some-example.xml\"",
+        "Parent":  {
+                       "CommandElements":  "Get-Content \"some-example.xml\"",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Get-Content \"some-example.xml\"",
+                       "Parent":  "Get-Content \"some-example.xml\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  9,
+                       "StartColumnNumber":  30,
+                       "EndLineNumber":  9,
+                       "EndColumnNumber":  48,
+                       "Text":  "\"some-example.xml\"",
+                       "StartOffset":  284,
+                       "EndOffset":  302
+                   }
+    },
+    {
+        "Start":  309,
+        "End":  324,
+        "Type":  "PipelineAst",
+        "Value":  "Write-Host $xml",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "$xml = [xml](Get-Content \"some-example.xml\") Write-Host $xml return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Traps":  null,
+                       "Extent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  10,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  10,
+                       "EndColumnNumber":  20,
+                       "Text":  "Write-Host $xml",
+                       "StartOffset":  309,
+                       "EndOffset":  324
+                   }
+    },
+    {
+        "Start":  309,
+        "End":  324,
+        "Type":  "CommandAst",
+        "Value":  "Write-Host $xml",
+        "Parent":  {
+                       "PipelineElements":  "Write-Host $xml",
+                       "Extent":  "Write-Host $xml",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  10,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  10,
+                       "EndColumnNumber":  20,
+                       "Text":  "Write-Host $xml",
+                       "StartOffset":  309,
+                       "EndOffset":  324
+                   }
+    },
+    {
+        "Start":  309,
+        "End":  319,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "Write-Host",
+        "Parent":  {
+                       "CommandElements":  "Write-Host $xml",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Write-Host $xml",
+                       "Parent":  "Write-Host $xml"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  10,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  10,
+                       "EndColumnNumber":  15,
+                       "Text":  "Write-Host",
+                       "StartOffset":  309,
+                       "EndOffset":  319
+                   }
+    },
+    {
+        "Start":  320,
+        "End":  324,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$xml",
+        "Parent":  {
+                       "CommandElements":  "Write-Host $xml",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Write-Host $xml",
+                       "Parent":  "Write-Host $xml"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  10,
+                       "StartColumnNumber":  16,
+                       "EndLineNumber":  10,
+                       "EndColumnNumber":  20,
+                       "Text":  "$xml",
+                       "StartOffset":  320,
+                       "EndOffset":  324
+                   }
+    },
+    {
+        "Start":  330,
+        "End":  409,
+        "Type":  "ReturnStatementAst",
+        "Value":  "return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "$xml = [xml](Get-Content \"some-example.xml\") Write-Host $xml return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Traps":  null,
+                       "Extent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "{\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  5,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  84,
+                       "Text":  "return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "StartOffset":  330,
+                       "EndOffset":  409
+                   }
+    },
+    {
+        "Start":  337,
+        "End":  409,
+        "Type":  "PipelineAst",
+        "Value":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+        "Parent":  {
+                       "Pipeline":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Extent":  "return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  84,
+                       "Text":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "StartOffset":  337,
+                       "EndOffset":  409
+                   }
+    },
+    {
+        "Start":  337,
+        "End":  409,
+        "Type":  "CommandExpressionAst",
+        "Value":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+        "Parent":  {
+                       "PipelineElements":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  84,
+                       "Text":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "StartOffset":  337,
+                       "EndOffset":  409
+                   }
+    },
+    {
+        "Start":  337,
+        "End":  409,
+        "Type":  "HashtableAst",
+        "Value":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+        "Parent":  {
+                       "Expression":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Redirections":  "",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  12,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  84,
+                       "Text":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "StartOffset":  337,
+                       "EndOffset":  409
+                   }
+    },
+    {
+        "Start":  340,
+        "End":  346,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "thing1",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  15,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  21,
+                       "Text":  "thing1",
+                       "StartOffset":  340,
+                       "EndOffset":  346
+                   }
+    },
+    {
+        "Start":  349,
+        "End":  356,
+        "Type":  "PipelineAst",
+        "Value":  "$thing1",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  24,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  31,
+                       "Text":  "$thing1",
+                       "StartOffset":  349,
+                       "EndOffset":  356
+                   }
+    },
+    {
+        "Start":  349,
+        "End":  356,
+        "Type":  "CommandExpressionAst",
+        "Value":  "$thing1",
+        "Parent":  {
+                       "PipelineElements":  "$thing1",
+                       "Extent":  "$thing1",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  24,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  31,
+                       "Text":  "$thing1",
+                       "StartOffset":  349,
+                       "EndOffset":  356
+                   }
+    },
+    {
+        "Start":  349,
+        "End":  356,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing1",
+        "Parent":  {
+                       "Expression":  "$thing1",
+                       "Redirections":  "",
+                       "Extent":  "$thing1",
+                       "Parent":  "$thing1"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  24,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  31,
+                       "Text":  "$thing1",
+                       "StartOffset":  349,
+                       "EndOffset":  356
+                   }
+    },
+    {
+        "Start":  357,
+        "End":  363,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "thing2",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  32,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  38,
+                       "Text":  "thing2",
+                       "StartOffset":  357,
+                       "EndOffset":  363
+                   }
+    },
+    {
+        "Start":  366,
+        "End":  373,
+        "Type":  "PipelineAst",
+        "Value":  "$thing2",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  41,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  48,
+                       "Text":  "$thing2",
+                       "StartOffset":  366,
+                       "EndOffset":  373
+                   }
+    },
+    {
+        "Start":  366,
+        "End":  373,
+        "Type":  "CommandExpressionAst",
+        "Value":  "$thing2",
+        "Parent":  {
+                       "PipelineElements":  "$thing2",
+                       "Extent":  "$thing2",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  41,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  48,
+                       "Text":  "$thing2",
+                       "StartOffset":  366,
+                       "EndOffset":  373
+                   }
+    },
+    {
+        "Start":  366,
+        "End":  373,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing2",
+        "Parent":  {
+                       "Expression":  "$thing2",
+                       "Redirections":  "",
+                       "Extent":  "$thing2",
+                       "Parent":  "$thing2"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  41,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  48,
+                       "Text":  "$thing2",
+                       "StartOffset":  366,
+                       "EndOffset":  373
+                   }
+    },
+    {
+        "Start":  374,
+        "End":  380,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "thing3",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  49,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  55,
+                       "Text":  "thing3",
+                       "StartOffset":  374,
+                       "EndOffset":  380
+                   }
+    },
+    {
+        "Start":  383,
+        "End":  390,
+        "Type":  "PipelineAst",
+        "Value":  "$thing3",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  58,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  65,
+                       "Text":  "$thing3",
+                       "StartOffset":  383,
+                       "EndOffset":  390
+                   }
+    },
+    {
+        "Start":  383,
+        "End":  390,
+        "Type":  "CommandExpressionAst",
+        "Value":  "$thing3",
+        "Parent":  {
+                       "PipelineElements":  "$thing3",
+                       "Extent":  "$thing3",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  58,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  65,
+                       "Text":  "$thing3",
+                       "StartOffset":  383,
+                       "EndOffset":  390
+                   }
+    },
+    {
+        "Start":  383,
+        "End":  390,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing3",
+        "Parent":  {
+                       "Expression":  "$thing3",
+                       "Redirections":  "",
+                       "Extent":  "$thing3",
+                       "Parent":  "$thing3"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  58,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  65,
+                       "Text":  "$thing3",
+                       "StartOffset":  383,
+                       "EndOffset":  390
+                   }
+    },
+    {
+        "Start":  391,
+        "End":  397,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "thing4",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  66,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  72,
+                       "Text":  "thing4",
+                       "StartOffset":  391,
+                       "EndOffset":  397
+                   }
+    },
+    {
+        "Start":  400,
+        "End":  407,
+        "Type":  "PipelineAst",
+        "Value":  "$thing4",
+        "Parent":  {
+                       "KeyValuePairs":  "(thing1, $thing1) (thing2, $thing2) (thing3, $thing3) (thing4, $thing4)",
+                       "StaticType":  "hashtable",
+                       "Extent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  75,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  82,
+                       "Text":  "$thing4",
+                       "StartOffset":  400,
+                       "EndOffset":  407
+                   }
+    },
+    {
+        "Start":  400,
+        "End":  407,
+        "Type":  "CommandExpressionAst",
+        "Value":  "$thing4",
+        "Parent":  {
+                       "PipelineElements":  "$thing4",
+                       "Extent":  "$thing4",
+                       "Parent":  "@{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  75,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  82,
+                       "Text":  "$thing4",
+                       "StartOffset":  400,
+                       "EndOffset":  407
+                   }
+    },
+    {
+        "Start":  400,
+        "End":  407,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$thing4",
+        "Parent":  {
+                       "Expression":  "$thing4",
+                       "Redirections":  "",
+                       "Extent":  "$thing4",
+                       "Parent":  "$thing4"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  11,
+                       "StartColumnNumber":  75,
+                       "EndLineNumber":  11,
+                       "EndColumnNumber":  82,
+                       "Text":  "$thing4",
+                       "StartOffset":  400,
+                       "EndOffset":  407
+                   }
+    },
+    {
+        "Start":  416,
+        "End":  501,
+        "Type":  "PipelineAst",
+        "Value":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  14,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  14,
+                       "EndColumnNumber":  86,
+                       "Text":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "StartOffset":  416,
+                       "EndOffset":  501
+                   }
+    },
+    {
+        "Start":  416,
+        "End":  501,
+        "Type":  "CommandAst",
+        "Value":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+        "Parent":  {
+                       "PipelineElements":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "Extent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  14,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  14,
+                       "EndColumnNumber":  86,
+                       "Text":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "StartOffset":  416,
+                       "EndOffset":  501
+                   }
+    },
+    {
+        "Start":  416,
+        "End":  429,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "Get-StuffHere",
+        "Parent":  {
+                       "CommandElements":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "Parent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  14,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  14,
+                       "EndColumnNumber":  14,
+                       "Text":  "Get-StuffHere",
+                       "StartOffset":  416,
+                       "EndOffset":  429
+                   }
+    },
+    {
+        "Start":  430,
+        "End":  447,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\u0027[string]$thing1\u0027",
+        "Parent":  {
+                       "CommandElements":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "Parent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  14,
+                       "StartColumnNumber":  15,
+                       "EndLineNumber":  14,
+                       "EndColumnNumber":  32,
+                       "Text":  "\u0027[string]$thing1\u0027",
+                       "StartOffset":  430,
+                       "EndOffset":  447
+                   }
+    },
+    {
+        "Start":  448,
+        "End":  465,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\u0027[string]$thing2\u0027",
+        "Parent":  {
+                       "CommandElements":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "Parent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  14,
+                       "StartColumnNumber":  33,
+                       "EndLineNumber":  14,
+                       "EndColumnNumber":  50,
+                       "Text":  "\u0027[string]$thing2\u0027",
+                       "StartOffset":  448,
+                       "EndOffset":  465
+                   }
+    },
+    {
+        "Start":  466,
+        "End":  483,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\u0027[string]$thing3\u0027",
+        "Parent":  {
+                       "CommandElements":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "Parent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  14,
+                       "StartColumnNumber":  51,
+                       "EndLineNumber":  14,
+                       "EndColumnNumber":  68,
+                       "Text":  "\u0027[string]$thing3\u0027",
+                       "StartOffset":  466,
+                       "EndOffset":  483
+                   }
+    },
+    {
+        "Start":  484,
+        "End":  501,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\u0027[string]$thing4\u0027",
+        "Parent":  {
+                       "CommandElements":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "InvocationOperator":  0,
+                       "DefiningKeyword":  null,
+                       "Redirections":  "",
+                       "Extent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027",
+                       "Parent":  "Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  14,
+                       "StartColumnNumber":  69,
+                       "EndLineNumber":  14,
+                       "EndColumnNumber":  86,
+                       "Text":  "\u0027[string]$thing4\u0027",
+                       "StartOffset":  484,
+                       "EndOffset":  501
+                   }
+    },
+    {
+        "Start":  511,
+        "End":  533,
+        "Type":  "PipelineAst",
+        "Value":  "\"Formating multi line\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  19,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  19,
+                       "EndColumnNumber":  23,
+                       "Text":  "\"Formating multi line\"",
+                       "StartOffset":  511,
+                       "EndOffset":  533
+                   }
+    },
+    {
+        "Start":  511,
+        "End":  533,
+        "Type":  "CommandExpressionAst",
+        "Value":  "\"Formating multi line\"",
+        "Parent":  {
+                       "PipelineElements":  "\"Formating multi line\"",
+                       "Extent":  "\"Formating multi line\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  19,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  19,
+                       "EndColumnNumber":  23,
+                       "Text":  "\"Formating multi line\"",
+                       "StartOffset":  511,
+                       "EndOffset":  533
+                   }
+    },
+    {
+        "Start":  511,
+        "End":  533,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"Formating multi line\"",
+        "Parent":  {
+                       "Expression":  "\"Formating multi line\"",
+                       "Redirections":  "",
+                       "Extent":  "\"Formating multi line\"",
+                       "Parent":  "\"Formating multi line\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  19,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  19,
+                       "EndColumnNumber":  23,
+                       "Text":  "\"Formating multi line\"",
+                       "StartOffset":  511,
+                       "EndOffset":  533
+                   }
+    },
+    {
+        "Start":  535,
+        "End":  564,
+        "Type":  "PipelineAst",
+        "Value":  "\"strings when they should be\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  20,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  20,
+                       "EndColumnNumber":  30,
+                       "Text":  "\"strings when they should be\"",
+                       "StartOffset":  535,
+                       "EndOffset":  564
+                   }
+    },
+    {
+        "Start":  535,
+        "End":  564,
+        "Type":  "CommandExpressionAst",
+        "Value":  "\"strings when they should be\"",
+        "Parent":  {
+                       "PipelineElements":  "\"strings when they should be\"",
+                       "Extent":  "\"strings when they should be\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  20,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  20,
+                       "EndColumnNumber":  30,
+                       "Text":  "\"strings when they should be\"",
+                       "StartOffset":  535,
+                       "EndOffset":  564
+                   }
+    },
+    {
+        "Start":  535,
+        "End":  564,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"strings when they should be\"",
+        "Parent":  {
+                       "Expression":  "\"strings when they should be\"",
+                       "Redirections":  "",
+                       "Extent":  "\"strings when they should be\"",
+                       "Parent":  "\"strings when they should be\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  20,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  20,
+                       "EndColumnNumber":  30,
+                       "Text":  "\"strings when they should be\"",
+                       "StartOffset":  535,
+                       "EndOffset":  564
+                   }
+    },
+    {
+        "Start":  566,
+        "End":  595,
+        "Type":  "PipelineAst",
+        "Value":  "\"using the @ signs and stuff\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  21,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  21,
+                       "EndColumnNumber":  30,
+                       "Text":  "\"using the @ signs and stuff\"",
+                       "StartOffset":  566,
+                       "EndOffset":  595
+                   }
+    },
+    {
+        "Start":  566,
+        "End":  595,
+        "Type":  "CommandExpressionAst",
+        "Value":  "\"using the @ signs and stuff\"",
+        "Parent":  {
+                       "PipelineElements":  "\"using the @ signs and stuff\"",
+                       "Extent":  "\"using the @ signs and stuff\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  21,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  21,
+                       "EndColumnNumber":  30,
+                       "Text":  "\"using the @ signs and stuff\"",
+                       "StartOffset":  566,
+                       "EndOffset":  595
+                   }
+    },
+    {
+        "Start":  566,
+        "End":  595,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"using the @ signs and stuff\"",
+        "Parent":  {
+                       "Expression":  "\"using the @ signs and stuff\"",
+                       "Redirections":  "",
+                       "Extent":  "\"using the @ signs and stuff\"",
+                       "Parent":  "\"using the @ signs and stuff\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  21,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  21,
+                       "EndColumnNumber":  30,
+                       "Text":  "\"using the @ signs and stuff\"",
+                       "StartOffset":  566,
+                       "EndOffset":  595
+                   }
+    },
+    {
+        "Start":  599,
+        "End":  663,
+        "Type":  "PipelineAst",
+        "Value":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  65,
+                       "Text":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "StartOffset":  599,
+                       "EndOffset":  663
+                   }
+    },
+    {
+        "Start":  599,
+        "End":  663,
+        "Type":  "CommandExpressionAst",
+        "Value":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+        "Parent":  {
+                       "PipelineElements":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "Extent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  65,
+                       "Text":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "StartOffset":  599,
+                       "EndOffset":  663
+                   }
+    },
+    {
+        "Start":  599,
+        "End":  663,
+        "Type":  "BinaryExpressionAst",
+        "Value":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+        "Parent":  {
+                       "Expression":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "Redirections":  "",
+                       "Extent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "Parent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  65,
+                       "Text":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "StartOffset":  599,
+                       "EndOffset":  663
+                   }
+    },
+    {
+        "Start":  599,
+        "End":  634,
+        "Type":  "BinaryExpressionAst",
+        "Value":  "\"advanced concat stuff \" + $trey[0]",
+        "Parent":  {
+                       "Operator":  40,
+                       "Left":  "\"advanced concat stuff \" + $trey[0]",
+                       "Right":  "\" hopefully this works...\"",
+                       "ErrorPosition":  "+",
+                       "StaticType":  "System.Object",
+                       "Extent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "Parent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  36,
+                       "Text":  "\"advanced concat stuff \" + $trey[0]",
+                       "StartOffset":  599,
+                       "EndOffset":  634
+                   }
+    },
+    {
+        "Start":  599,
+        "End":  623,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"advanced concat stuff \"",
+        "Parent":  {
+                       "Operator":  40,
+                       "Left":  "\"advanced concat stuff \"",
+                       "Right":  "$trey[0]",
+                       "ErrorPosition":  "+",
+                       "StaticType":  "System.Object",
+                       "Extent":  "\"advanced concat stuff \" + $trey[0]",
+                       "Parent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  25,
+                       "Text":  "\"advanced concat stuff \"",
+                       "StartOffset":  599,
+                       "EndOffset":  623
+                   }
+    },
+    {
+        "Start":  626,
+        "End":  634,
+        "Type":  "IndexExpressionAst",
+        "Value":  "$trey[0]",
+        "Parent":  {
+                       "Operator":  40,
+                       "Left":  "\"advanced concat stuff \"",
+                       "Right":  "$trey[0]",
+                       "ErrorPosition":  "+",
+                       "StaticType":  "System.Object",
+                       "Extent":  "\"advanced concat stuff \" + $trey[0]",
+                       "Parent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  28,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  36,
+                       "Text":  "$trey[0]",
+                       "StartOffset":  626,
+                       "EndOffset":  634
+                   }
+    },
+    {
+        "Start":  626,
+        "End":  631,
+        "Type":  "VariableExpressionAst",
+        "Value":  "$trey",
+        "Parent":  {
+                       "Target":  "$trey",
+                       "Index":  "0",
+                       "StaticType":  "System.Object",
+                       "Extent":  "$trey[0]",
+                       "Parent":  "\"advanced concat stuff \" + $trey[0]"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  28,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  33,
+                       "Text":  "$trey",
+                       "StartOffset":  626,
+                       "EndOffset":  631
+                   }
+    },
+    {
+        "Start":  632,
+        "End":  633,
+        "Type":  "ConstantExpressionAst",
+        "Value":  "0",
+        "Parent":  {
+                       "Target":  "$trey",
+                       "Index":  "0",
+                       "StaticType":  "System.Object",
+                       "Extent":  "$trey[0]",
+                       "Parent":  "\"advanced concat stuff \" + $trey[0]"
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  34,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  35,
+                       "Text":  "0",
+                       "StartOffset":  632,
+                       "EndOffset":  633
+                   }
+    },
+    {
+        "Start":  637,
+        "End":  663,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\" hopefully this works...\"",
+        "Parent":  {
+                       "Operator":  40,
+                       "Left":  "\"advanced concat stuff \" + $trey[0]",
+                       "Right":  "\" hopefully this works...\"",
+                       "ErrorPosition":  "+",
+                       "StaticType":  "System.Object",
+                       "Extent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"",
+                       "Parent":  "\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  23,
+                       "StartColumnNumber":  39,
+                       "EndLineNumber":  23,
+                       "EndColumnNumber":  65,
+                       "Text":  "\" hopefully this works...\"",
+                       "StartOffset":  637,
+                       "EndOffset":  663
+                   }
+    },
+    {
+        "Start":  667,
+        "End":  732,
+        "Type":  "PipelineAst",
+        "Value":  "\"Can i get the parameter names out of the function or something?\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  25,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  25,
+                       "EndColumnNumber":  66,
+                       "Text":  "\"Can i get the parameter names out of the function or something?\"",
+                       "StartOffset":  667,
+                       "EndOffset":  732
+                   }
+    },
+    {
+        "Start":  667,
+        "End":  732,
+        "Type":  "CommandExpressionAst",
+        "Value":  "\"Can i get the parameter names out of the function or something?\"",
+        "Parent":  {
+                       "PipelineElements":  "\"Can i get the parameter names out of the function or something?\"",
+                       "Extent":  "\"Can i get the parameter names out of the function or something?\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  25,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  25,
+                       "EndColumnNumber":  66,
+                       "Text":  "\"Can i get the parameter names out of the function or something?\"",
+                       "StartOffset":  667,
+                       "EndOffset":  732
+                   }
+    },
+    {
+        "Start":  667,
+        "End":  732,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"Can i get the parameter names out of the function or something?\"",
+        "Parent":  {
+                       "Expression":  "\"Can i get the parameter names out of the function or something?\"",
+                       "Redirections":  "",
+                       "Extent":  "\"Can i get the parameter names out of the function or something?\"",
+                       "Parent":  "\"Can i get the parameter names out of the function or something?\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  25,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  25,
+                       "EndColumnNumber":  66,
+                       "Text":  "\"Can i get the parameter names out of the function or something?\"",
+                       "StartOffset":  667,
+                       "EndOffset":  732
+                   }
+    },
+    {
+        "Start":  734,
+        "End":  773,
+        "Type":  "PipelineAst",
+        "Value":  "\"... For splatting purposes, of course\"",
+        "Parent":  {
+                       "Unnamed":  true,
+                       "BlockKind":  130,
+                       "Statements":  "Write-Host \"Logging some stuff...\" $trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\") Write-Host \"Logging $trey stuff...\" function Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n} Get-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027 \"Formating multi line\" \"strings when they should be\" \"using the @ signs and stuff\" \"advanced concat stuff \" + $trey[0] + \" hopefully this works...\" \"Can i get the parameter names out of the function or something?\" \"... For splatting purposes, of course\"",
+                       "Traps":  null,
+                       "Extent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  26,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  26,
+                       "EndColumnNumber":  40,
+                       "Text":  "\"... For splatting purposes, of course\"",
+                       "StartOffset":  734,
+                       "EndOffset":  773
+                   }
+    },
+    {
+        "Start":  734,
+        "End":  773,
+        "Type":  "CommandExpressionAst",
+        "Value":  "\"... For splatting purposes, of course\"",
+        "Parent":  {
+                       "PipelineElements":  "\"... For splatting purposes, of course\"",
+                       "Extent":  "\"... For splatting purposes, of course\"",
+                       "Parent":  "Write-Host \"Logging some stuff...\"\r\n\r\n$trey = @(\"trey\", \"hayden\", \"daniel\", \"other\", \"names\", \"as\", \"well\")\r\n\r\nWrite-Host \"Logging $trey stuff...\"\r\n\r\nfunction Get-StuffHere {\r\n    param([string]$thing1, [string]$thing2, [string]$thing3, [string]$thing4)\r\n    $xml = [xml](Get-Content \"some-example.xml\")\r\n    Write-Host $xml\r\n    return @{ thing1 = $thing1;thing2 = $thing2;thing3 = $thing3;thing4 = $thing4 }\r\n}\r\n\r\nGet-StuffHere \u0027[string]$thing1\u0027 \u0027[string]$thing2\u0027 \u0027[string]$thing3\u0027 \u0027[string]$thing4\u0027\r\n\r\n\r\n\r\n\r\n\"Formating multi line\"\r\n\"strings when they should be\"\r\n\"using the @ signs and stuff\"\r\n\r\n\"advanced concat stuff \" + $trey[0] + \" hopefully this works...\"\r\n\r\n\"Can i get the parameter names out of the function or something?\"\r\n\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  26,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  26,
+                       "EndColumnNumber":  40,
+                       "Text":  "\"... For splatting purposes, of course\"",
+                       "StartOffset":  734,
+                       "EndOffset":  773
+                   }
+    },
+    {
+        "Start":  734,
+        "End":  773,
+        "Type":  "StringConstantExpressionAst",
+        "Value":  "\"... For splatting purposes, of course\"",
+        "Parent":  {
+                       "Expression":  "\"... For splatting purposes, of course\"",
+                       "Redirections":  "",
+                       "Extent":  "\"... For splatting purposes, of course\"",
+                       "Parent":  "\"... For splatting purposes, of course\""
+                   },
+        "Extent":  {
+                       "File":  "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1",
+                       "StartScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "EndScriptPosition":  "System.Management.Automation.Language.InternalScriptPosition",
+                       "StartLineNumber":  26,
+                       "StartColumnNumber":  1,
+                       "EndLineNumber":  26,
+                       "EndColumnNumber":  40,
+                       "Text":  "\"... For splatting purposes, of course\"",
+                       "StartOffset":  734,
+                       "EndOffset":  773
+                   }
+    }
+]

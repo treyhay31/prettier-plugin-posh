@@ -1,26 +1,12 @@
 const PowerShell = require("powershell");
-const good = () => new Promise((resolve, reject) => {
-    const script = "C:\\proj\\prettier-plugin-posh\\tests\\example-actual.ps1";
 
-    const tokenize = "[System.Management.Automation.PSParser]::Tokenize";
-    const readFile = "[System.IO.File]::ReadAllText";
-    const tokenizerCommand = `${tokenize}([System.IO.File]::ReadAllText('${script}'), [ref]$null)`;
-
-    const parseInput = "[System.Management.Automation.Language.Parser]::ParseInput";
-    const parseInputCommand = `${parseInput}([System.IO.File]::ReadAllText('${script}'), [ref]$null, [ref]$null).FindAll({ $true }, $true)`;
-
-    const parseFile = "[System.Management.Automation.Language.Parser]::ParseFile";
-    const parseFileCommand = `${parseFile}('${script}', [ref]$null, [ref]$null).FindAll({ $true }, $true)`;
-    // Start the process
-    //let ps = new PowerShell(`
-    //    ${tokenizerCommand} | ConvertTo-Json | Set-Content ${script}-log-tokenizer.json -Force;
-    //    ${parseInputCommand} | Export-Clixml ${script}-log-parse-input.xml -Force;
-    //    ${parseFileCommand} | Export-Clixml ${script}-log-parse-file.xml -Force;
-    //`);
-
+const parse = (scriptContent) => new Promise((resolve, reject) => {
+    console.log("scipt content", scriptContent)
     let ps = new PowerShell(`
     # parse code:
-    $ast = [System.Management.Automation.Language.Parser]::ParseFile("${script}"    , [ref]$null, [ref]$null)
+    $ast = [System.Management.Automation.Language.Parser]::ParseInput(@"
+${scriptContent}
+"@, [ref]$null, [ref]$null)
 
     # include all ast objects:
     $predicate = { $true }
@@ -77,10 +63,6 @@ const good = () => new Promise((resolve, reject) => {
       reject(err);
     });
 
-    ps.on("output", json => {
-      resolve(JSON.parse(json));
-    });
-
     // Stderr
     ps.on("error-output", data => {
       console.error(data);
@@ -91,7 +73,11 @@ const good = () => new Promise((resolve, reject) => {
     ps.on("end", code => {
       console.log("exit code: ", code);
     });
+
+     // Stdout
+    ps.on("output", json => {
+      resolve( JSON.parse(json) )
+    });
 })
-                         good().then(data => {
-  console.log("test", data)
-});
+
+module.exports = parse;
