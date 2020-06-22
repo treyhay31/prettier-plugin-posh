@@ -1,7 +1,6 @@
 const PowerShell = require("powershell");
 
-const parse = (scriptContent) => new Promise((resolve, reject) => {
-    console.log("scipt content", scriptContent)
+const parser = (scriptContent) => new Promise((resolve, reject) => {
     let ps = new PowerShell(`
     # parse code:
     $ast = [System.Management.Automation.Language.Parser]::ParseInput(@"
@@ -16,37 +15,37 @@ ${scriptContent}
 
     # expose the object type:
     $type = @{
-      Name = 'Type'
+      Name = 'type'
       Expression = { $_.GetType().Name }
     }
 
     # expose the code position: -- start
     $start = @{
-      Name = 'Start'
+      Name = 'start'
       Expression = { $_.Extent.StartOffset }
     }
 
     # expose the code position: -- end
     $end = @{
-      Name = 'End'
+      Name = 'end'
       Expression = { $_.Extent.EndOffset }
     }
 
     # expose the text of the code:
     $text = @{
-      Name = 'Value'
+      Name = 'value'
       Expression = { $_.Extent.Text }
     }
 
     # expose the parent:
     $parent = @{
-      Name = 'Parent'
+      Name = 'parent'
       Expression = { $_.Parent }
     }
 
     # expose the parent:
     $extent = @{
-      Name = 'Extent'
+      Name = 'extent'
       Expression = { $_.Extent }
     }
 
@@ -79,5 +78,8 @@ ${scriptContent}
       resolve( JSON.parse(json) )
     });
 })
+
+const parse = async (scriptContent, parsers, opts) => await parser(scriptContent)
+
 
 module.exports = parse;
