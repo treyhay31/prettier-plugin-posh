@@ -22,8 +22,8 @@ const parsers = {
 	},
 };
 
-const printPosh = (path, options, print) => {
-	const pathNode = path.getValue()
+const printPosh = async (path, options, print) => {
+	const pathNode = await path.getValue()
 
 	if (Array.isArray(pathNode)) {
 	   // console.log("isArray", pathNode[0])
