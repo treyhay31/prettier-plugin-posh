@@ -6,6 +6,7 @@
   "scripts": {
     "posh": "node src/test-posh.js",
     "example": "prettier --plugin . example.ps1",
+    "start": "prettier --plugin . example.ps1",
     "test": "jest"
   },
   "keywords": [
