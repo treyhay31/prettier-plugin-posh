@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`simple snapshot should match the suggested output 1`] = `
+"
+      $name = \\"dobby\\"
+      $sum = 20 + 80
+      Write-Host \\"$name is $sum\\"
+"
+`;
