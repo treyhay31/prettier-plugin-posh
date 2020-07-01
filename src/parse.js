@@ -1,7 +1,11 @@
-const PowerShell = require("powershell");
+const { spawnSync } = require('child_process');
+const path = require('path');
+const PowerShell = require('powershell');
+const poshExe = path.join(__dirname, 'powershell/powershell.exe');
 
-const parser = (scriptContent) => new Promise((resolve, reject) => {
-    let ps = new PowerShell(`
+const parser = scriptContent =>
+	new Promise((resolve, reject) => {
+		let ps = new PowerShell(`
     # parse code:
     $ast = [System.Management.Automation.Language.Parser]::ParseInput(@"
 ${scriptContent}
@@ -54,32 +58,44 @@ ${scriptContent}
 
     # output the ast type and code position
     $astObjects | Select-Object -Property $start, $end, $type, $text, $parent, $extent | ConvertTo-Json
-    `)
+    `);
 
-    // Handle process errors (e.g. powershell not found)
-    ps.on("error", err => {
-      console.error(err);
-      reject(err);
-    });
+		// Handle process errors (e.g. powershell not found)
+		ps.on('error', err => {
+			// console.error(err);
+			reject(err);
+		});
 
-    // Stderr
-    ps.on("error-output", data => {
-      console.error(data);
-      reject(data);
-    });
+		// Stderr
+		ps.on('error-output', data => {
+			// console.error(data);
+			reject(data);
+		});
 
-    // End
-    ps.on("end", code => {
-      console.log("exit code: ", code);
-    });
+		// End
+		ps.on('end', code => {
+			// console.log('exit code: ', code);
+		});
 
-     // Stdout
-    ps.on("output", json => {
-      resolve( JSON.parse(json) )
-    });
-})
+		// Stdout
+		ps.on('output', json => {
+			resolve(JSON.parse(json));
+		});
+	});
 
-const parse = async (scriptContent, parsers, opts) => await parser(scriptContent)
+const parse = async (scriptContent, parsers, opts) => await parser(scriptContent);
 
+const parseHard = (text, parsers, opts) => {
+	const executionResult = spawnSync(poshExe, [path.join(__dirname, `powershell/ast.ps1 '${text}'`)], {
+		// input: text,
+		maxBuffer: 10 * 1024 * 1024, // 10MB
+	});
 
-module.exports = parse;
+	const error = executionResult.stderr.toString();
+	if (error) {
+		throw new Error(error);
+	}
+
+	return JSON.parse(executionResult.stdout.toString('utf-8'));
+};
+module.exports = { parse, parseHard };
