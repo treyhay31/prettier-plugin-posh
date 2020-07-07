@@ -6,129 +6,105 @@ const {
 
 const printPosh = (path, options, print) => {
 	const node = path.getValue();
-	// console.log('node', node);
-	// console.log('path', path);
 
 	if (Array.isArray(node)) {
-		// console.log('isArray', node[0].value);
-		return node.map(n => handleAst(n, path, options, print));
+		return concat(path.map(print));
 	}
 
 	return handleAst(node, path, options, print);
 };
 
 const handleAst = (node, path, options, print) => {
-	if (typeof node === 'undefined') {
+	// console.log(`type: ${node.type}`, `(${node.start})${node.value}(${node.end})`);
+	// console.log(`type: ${node.type}`, node);
+	if (typeof node === undefined) {
+		// console.log('returning...');
 		return '';
 	}
-	console.log(node.type, node.value);
+
 	switch (node.type) {
+		case 'ArrayExpressionAst':
+		case 'ArrayLiteralAst':
+		case 'AssignmentStatementAst':
+		case 'Ast':
+		case 'AttributeAst':
+		case 'AttributeBaseAst':
+		case 'AttributedExpressionAst':
+		case 'BaseCtorInvokeMemberExpressionAst':
 		case 'BinaryExpressionAst':
-			//console.log('inside BinaryExpressionAst block', node);
-			return path.call(print, 'value');
+		case 'BlockStatementAst':
+		case 'BreakStatementAst':
+		case 'CatchClauseAst':
+		case 'ChainableAst':
 		case 'CommandAst':
-			//console.log('inside CommandAst block', node);
-			return path.call(print, 'value');
+		case 'CommandBaseAst':
+		case 'CommandElementAst':
 		case 'CommandExpressionAst':
-			//console.log('inside CommandExpressionAst block', node);
-			return path.call(print, 'value');
+		case 'CommandParameterAst':
+		case 'CompilerGeneratedMemberFunctionAst':
+		case 'ConfigurationDefinitionAst':
 		case 'ConstantExpressionAst':
-			//console.log('inside ConstantExpressionAst block', node);
-			return path.call(print, 'value');
+		case 'ContinueStatementAst':
+		case 'ConvertExpressionAst':
+		case 'DataStatementAst':
+		case 'DoUntilStatementAst':
+		case 'DoWhileStatementAst':
+		case 'DynamicKeywordStatementAst':
+		case 'ErrorExpressionAst':
+		case 'ErrorStatementAst':
+		case 'ExitStatementAst':
+		case 'ExpandableStringExpressionAst':
+		case 'ExpressionAst':
+		case 'FileRedirectionAst':
+		case 'ForEachStatementAst':
+		case 'ForStatementAst':
+		case 'FunctionDefinitionAst':
+		case 'FunctionMemberAst':
+		case 'HashtableAst':
+		case 'IfStatementAst':
+		case 'IndexExpressionAst':
+		case 'InvokeMemberExpressionAst':
+		case 'LabeledStatementAst':
+		case 'LoopStatementAst':
+		case 'MemberAst':
+		case 'MemberExpressionAst':
+		case 'MergingRedirectionAst':
+		case 'NamedAttributeArgumentAst':
 		case 'NamedBlockAst':
-			//console.log('inside NamedBlockAst block', node);
-			return path.call(print, 'value');
+		case 'ParamBlockAst':
+		case 'ParameterAst':
+		case 'ParenExpressionAst':
 		case 'PipelineAst':
-			//console.log('inside PipelineAst block', node);
-			return path.call(print, 'value');
+		case 'PipelineBaseAst':
+		case 'PipelineChainAst':
+		case 'PropertyMemberAst':
+		case 'RedirectionAst':
+		case 'ReturnStatementAst':
 		case 'ScriptBlockAst':
-			//console.log('inside ScriptBlockAst block', node);
-			return path.call(print, 'value');
+		case 'ScriptBlockExpressionAst':
+		case 'SequencePointAst':
+		case 'StatementAst':
+		case 'StatementBlockAst':
 		case 'StringConstantExpressionAst':
-			//console.log('inside StringConstantExpressionAst block', node);
+		case 'SubExpressionAst':
+		case 'SwitchStatementAst':
+		case 'TernaryExpressionAst':
+		case 'ThrowStatementAst':
+		case 'TrapStatementAst':
+		case 'TryStatementAst':
+		case 'TypeConstraintAst':
+		case 'TypeDefinitionAst':
+		case 'TypeExpressionAst':
+		case 'UnaryExpressionAst':
+		case 'UsingExpressionAst':
+		case 'UsingStatementAst':
+		case 'VariableExpressionAst':
+		case 'WhileStatementAst':
+			console.log(node.type, node.value);
 			return path.call(print, 'value');
 		default:
-			//console.log('got nothing...', node);
 			return '';
 	}
-	/*
-	ArrayExpressionAst
-ArrayLiteralAst
-AssignmentStatementAst
-Ast
-AttributeAst
-AttributeBaseAst
-AttributedExpressionAst
-BaseCtorInvokeMemberExpressionAst
-BinaryExpressionAst
-BlockStatementAst
-BreakStatementAst
-CatchClauseAst
-ChainableAst
-CommandAst
-CommandBaseAst
-CommandElementAst
-CommandExpressionAst
-CommandParameterAst
-CompilerGeneratedMemberFunctionAst
-ConfigurationDefinitionAst
-ConstantExpressionAst
-ContinueStatementAst
-ConvertExpressionAst
-DataStatementAst
-DoUntilStatementAst
-DoWhileStatementAst
-DynamicKeywordStatementAst
-ErrorExpressionAst
-ErrorStatementAst
-ExitStatementAst
-ExpandableStringExpressionAst
-ExpressionAst
-FileRedirectionAst
-ForEachStatementAst
-ForStatementAst
-FunctionDefinitionAst
-FunctionMemberAst
-HashtableAst
-IfStatementAst
-IndexExpressionAst
-InvokeMemberExpressionAst
-LabeledStatementAst
-LoopStatementAst
-MemberAst
-MemberExpressionAst
-MergingRedirectionAst
-NamedAttributeArgumentAst
-NamedBlockAst
-ParamBlockAst
-ParameterAst
-ParenExpressionAst
-PipelineAst
-PipelineBaseAst
-PipelineChainAst
-PropertyMemberAst
-RedirectionAst
-ReturnStatementAst
-ScriptBlockAst
-ScriptBlockExpressionAst
-SequencePointAst
-StatementAst
-StatementBlockAst
-StringConstantExpressionAst
-SubExpressionAst
-SwitchStatementAst
-TernaryExpressionAst
-ThrowStatementAst
-TrapStatementAst
-TryStatementAst
-TypeConstraintAst
-TypeDefinitionAst
-TypeExpressionAst
-UnaryExpressionAst
-UsingExpressionAst
-UsingStatementAst
-VariableExpressionAst
-WhileStatementAst */
 };
 
 module.exports = {

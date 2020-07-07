@@ -13,6 +13,8 @@ const parsers = {
 	'posh-parse': {
 		parse: text => parse.parseHard(text),
 		astFormat: 'posh-ast',
+		locEnd: node => node.end,
+		locStart: node => node.start,
 	},
 };
 
